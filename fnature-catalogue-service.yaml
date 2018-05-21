@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: catalogue
+spec:
+  selector:
+    app: catalogue
+  ports:
+  - protocol: TCP
+    port: 3002
+    targetPort: 3002
